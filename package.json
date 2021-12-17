@@ -1,0 +1,22 @@
+{
+  "name": "smartlokusserver",
+  "version": "1.0.0",
+  "description": "Backend server for the smart lokus project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.46.1",
+    "expo-server-sdk": "^3.6.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.1.3",
+    "mqtt": "^4.2.8",
+    "shelljs": "^0.8.4"
+  }
+}

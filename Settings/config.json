@@ -1,0 +1,23 @@
+{
+  "database" : {
+    "users" : {
+      "application" : "JQ5rX5gAmvNLhqZT",
+      "JonasBeking" : "rORWk4KTWMW3x7Qy",
+      "TobiasAlt" : "password",
+      "KilianMeyer" : "password",
+      "ReneHaerke" : "password",
+      "MagnusHoyer" : "password"
+    }
+  },
+  "mqtt" : {
+    "topics" : {
+      "Sensordata" : "topic/data",
+      "Intervaldata" : "/interval"
+    },
+    "address": "localhost",
+    "port" : 1883
+  },
+  "express" : {
+    "port" : 8000
+  }
+}

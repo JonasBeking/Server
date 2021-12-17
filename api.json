@@ -1,0 +1,134 @@
+[
+  {
+    "method" : "GET",
+    "uri" : "/getDevices",
+    "parameters" : {
+      "id" : "z4585u2bgt8t45utbgtng458t"
+    },
+    "response" : [
+      {
+        "mac": "5758578gg85hgn5jhgjhnhj58",
+        "name": "testlokus",
+        "wakeup_ms": 10000,
+        "triggered": false,
+        "battery": 0.92,
+        "temperature" : {
+          "heater" : 4755,
+          "window" : 5849
+        },
+        "room" : "Scheisshaus1"
+      }
+    ]
+  },
+  {
+    "method" : "GET",
+    "uri" : "/getRooms",
+    "parameters" : {
+      "id" : "z4585u2bgt8t45utbgtng458t"
+    },
+    "response" : [
+      {"name": "Scheisshaus1",
+        "device": "5758578gg85hgn5jhgjhnhj58",
+        "level": 2,
+        "number": 124
+      }
+    ]
+  },
+  {
+    "method" : "GET",
+    "uri" : "/getDeviceByRoom",
+    "parameters" : {
+      "id" : "z4585u2bgt8t45utbgtng458t",
+      "room" : "Scheisshaus1"
+    },
+    "response" : {
+      "mac": "5758578gg85hgn5jhgjhnhj58",
+      "name": "testlokus",
+      "wakeup_ms": 10000,
+      "triggered": false,
+      "battery": 0.92,
+      "temperature": {
+        "heater": 4755,
+        "window": 5849
+      }
+    }
+  },
+  {
+    "method" : "GET",
+    "url": "/getDevice",
+    "parameters" : {
+      "mac" : "rjgt845t8gntghg5g",
+      "id" : "8t55ut58ng8igjg8954jg8956jg"
+    },
+    "response" : {
+      "mac": "5758578gg85hgn5jhgjhnhj58",
+      "name": "testlokus",
+      "wakeup_ms": 10000,
+      "triggered": false,
+      "battery": 0.92,
+      "temperature" : {
+        "heater" : 4755,
+        "window" : 5849
+      },
+      "room" : "Scheisshaus1"
+    }
+  },
+  {
+    "method" : "PUT",
+    "url" : "/addDeviceToRoom",
+    "parameters" : {
+      "mac" : "85tz85z68576u56",
+      "room" : "Scheisshaus1",
+      "id" : "5684589458448768"
+    }
+  },
+  {
+    "method" : "DELETE",
+    "url" : "/removeDeviceFromRoom",
+    "parameters" : {
+      "room" : "Scheisshaus1",
+      "id" : "5684589458448768"
+    }
+  },
+  {
+    "method" : "DELETE",
+    "url" : "/removeAlertFromRoom",
+    "parameters" : {
+      "room" : "Scheisshaus1",
+      "id" : "5684589458448768"
+    }
+  },
+  {
+    "method" : "DELETE",
+    "url" : "/removeAlertFromDevice",
+    "parameters" : {
+      "mac" : "6567737646hzh566",
+      "id" : "5684589458448768"
+    }
+  },
+  {
+    "method" : "PUT",
+    "url" : "/setIntervalForDevice",
+    "parameters" : {
+      "mac" : "85tz85z68576u56",
+      "id" : "5684589458448768",
+      "interval" : 3000
+    }
+  },
+  {
+    "method" : "PUT",
+    "url" : "/registerPushToken",
+    "parameters" : {
+      "token" : "85tz85z68576u56",
+      "id" : "5684589458448768"
+    }
+  },
+  {
+    "method" : "GET",
+    "url" : "/getRoom",
+    "parameters" : {
+      "getroom" : "85tz85z68576u56",
+      "id" : "5684589458448768"
+    }
+  }
+]
